@@ -8,6 +8,7 @@ Exemplo: Um exemplo comum de uso do Consumer é para imprimir ou processar eleme
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 //Exemplo de código:
 public class ConsumerExemple {
@@ -34,7 +35,7 @@ public class ConsumerExemple {
         // Usar o Consumer para imprimir números pares no Stream
         System.out.println("Usando o Consumer para imprimir números pares no Stream");
         numeros.stream()
-                .filter(n -> n % 2 == 0)
+                .filter(n -> n % 2 ==0)
                 .forEach(System.out::println);
     }
 }
